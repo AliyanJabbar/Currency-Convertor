@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";
 
 const currency: any = {
@@ -28,7 +30,6 @@ let user_answer = await inquirer.prompt([
     type: "number"
   }
 ]);
-
 
 let userFromCurrency = user_answer.from
 let userToCurrency = user_answer.to
